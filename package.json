@@ -1,0 +1,20 @@
+{
+  "name": "firstnodeserver",
+  "version": "1.0.0",
+  "description": "Node Server application ",
+  "main": "server.js",
+  "scripts": {
+    "test": "start",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pkurzyns/firstNodeServer.git"
+  },
+  "author": "Pawel Kurzynski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pkurzyns/firstNodeServer/issues"
+  },
+  "homepage": "https://github.com/pkurzyns/firstNodeServer#readme"
+}
