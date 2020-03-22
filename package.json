@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/pkurzyns/firstNodeServer/issues"
   },
-  "homepage": "https://github.com/pkurzyns/firstNodeServer#readme"
+  "homepage": "https://github.com/pkurzyns/firstNodeServer#readme",
+  "dependencies": {
+    "fastify": "^2.13.0"
+  }
 }
