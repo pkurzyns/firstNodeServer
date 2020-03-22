@@ -1,12 +1,21 @@
 // Require the framework and instantiate it
-const fastify = require('fastify')({
-    logger: true
-  })
+const fastify = require('fastify')({ logger: true })
+const path = require('path');
   
   // Declare a route
-  fastify.get('/', function (request, reply) {
-    reply.send(JSON.stringify( 'Ania coś tam umie kodzić' ));
+  fastify.register(require('fastify-static'), {
+        root: path.join(__dirname,'public'),
+        prefix: '/public/' //optional: default '/'
   })
+
+  fastify.get('/', function (req, reply){
+      reply.sendFile('index.html') //serving path.join(_dirname, 'public', 'index.html')
+  })
+
+//   fastify.get('/', function (request, reply) {
+//     reply.send(JSON.stringify( 'Ania coś tam umie kodzić' ));
+//   })
+
   fastify.get('/ania', function (request, reply) {
     reply.send(JSON.stringify( 'Ania do ćwiczeń' ));
   })
