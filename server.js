@@ -7,7 +7,14 @@ const fastify = require('fastify')({
   fastify.get('/', function (request, reply) {
     reply.send(JSON.stringify( 'Ania coś tam umie kodzić' ));
   })
+  fastify.get('/ania', function (request, reply) {
+    reply.send(JSON.stringify( 'Ania do ćwiczeń' ));
+  })
   
+  fastify.get('/pawel', function (request, reply) {
+    reply.send(JSON.stringify( 'Pawel uczy anie' ));
+  })
+
   // Run the server!
 const start = async () => {
   try {
