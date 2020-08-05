@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/pkurzyns/firstNodeServer#readme",
   "dependencies": {
-    "fastify": "^2.13.0"
+    "fastify": "^2.15.1"
   }
 }
